@@ -2,25 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiFeed.Resources.Pages.BetPage1X"
-             BackgroundColor="LightPink"
+             BackgroundColor="#2C394B"
              Title="BetPage1X">
 
 
 
     <ScrollView>
         <StackLayout>
-            <Label 
-            Text="Welcome to 1"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
         
         <Label
             x:Name="LabelFeed1X"
+            TextColor="#FF4C29"
+            FontAttributes="Bold"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
         
         
         <Button 
+            Text="Back"
+            BackgroundColor="#082032"
             x:Name="BackButton1X"
             Clicked="BackButton1X_Clicked">
             
@@ -29,40 +29,39 @@
 
             <StackLayout x:Name="ButtonStackLayout">
                 
-                <StackLayout.Background>
+                <!--<StackLayout.Background>
                     <LinearGradientBrush StartPoint="0,1" EndPoint="0,0">
-                        <GradientStop Color="Aqua" Offset="0"/>
-                        <GradientStop Color="LightPink" Offset="1"/>
+                        <GradientStop Color="#082032" Offset="0"/>
+                        <GradientStop Color="#334756" Offset="1"/>
                     </LinearGradientBrush>
-                </StackLayout.Background>
-                
-                <Button x:Name="FootballButton"
-                        Text="1" Margin="10"/>
-            <Button x:Name="IceHockeyButton" Text="Ice Hockey" Margin="10"/>
-            <Button x:Name="BasketballButton" Text="Basketball" Margin="10"/>
-            <Button x:Name="TennisButton" Text="Tennis" Margin="10"/>
-            <Button x:Name="BaseballButton" Text="Baseball" Margin="10"/>
-            <Button x:Name="VolleyballButton" Text="Volleyball" Margin="10"/>
-            <Button x:Name="RugbyButton" Text="Rugby" Margin="10"/>
-            <Button x:Name="HandballButton" Text="Handball" Margin="10"/>
-            <Button x:Name="BoksButton" Text="Boks" Margin="10"/>
-            <Button x:Name="TableTennisButton" Text="Table Tennis" Margin="10"/>
-            <Button x:Name="ChessButton" Text="Chess" Margin="10"/>
-            <Button x:Name="AmericanFootballButton" Text="American Football" Margin="10"/>
-            <Button x:Name="FutsalButton" Text="Futsal" Margin="10"/>
-            <Button x:Name="PoloButton" Text="Polo" Margin="10"/>
-            <Button x:Name="MotorsportButton" Text="Motorsport" Margin="10"/>
-            <Button x:Name="BiathlonButton" Text="Biathlon" Margin="10"/>
-            <Button x:Name="TVGamesButton" Text="TV-Games" Margin="10"/>
-            <Button x:Name="DartsButton" Text="Darts" Margin="10"/>
-            <Button x:Name="AlpineSkiingButton" Text="Alpine Skiing" Margin="10"/>
-            <Button x:Name="SkiJumpingButton" Text="Ski Jumping" Margin="10"/>
-            <Button x:Name="SkiingButton" Text="Skiing" Margin="10"/>
-            <Button x:Name="Formula1Button" Text="Formula l" Margin="10"/>
-            <Button x:Name="AustralianRulesButton" Text="Australian Rulesl" Margin="10"/>
-            <Button x:Name="Volleyball2Button" Text="Volleyball" Margin="10"/>
-            <Button x:Name="SnookerButton" Text="Snooker" Margin="10"/>
-            <Button x:Name="EsportsButton" Text="40" Margin="10"/>
+                </StackLayout.Background>-->
+
+            <Button BackgroundColor="#334756" x:Name="FootballButton" Text="Football"                  Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="IceHockeyButton" Text="Ice Hockey"               Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="BasketballButton" Text="Basketball"              Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="TennisButton" Text="Tennis"                      Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="BaseballButton" Text="Baseball"                  Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="VolleyballButton" Text="Volleyball"              Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="RugbyButton" Text="Rugby"                        Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="HandballButton" Text="Handball"                  Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="BoksButton" Text="Boks"                          Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="TableTennisButton" Text="Table Tennis"           Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="ChessButton" Text="Chess"                        Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="AmericanFootballButton" Text="American Football" Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="FutsalButton" Text="Futsal"                      Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="PoloButton" Text="Polo"                          Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="MotorsportButton" Text="Motorsport"              Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="BiathlonButton" Text="Biathlon"                  Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="TVGamesButton" Text="TV-Games"                   Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="DartsButton" Text="Darts"                        Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="AlpineSkiingButton" Text="Alpine Skiing"         Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="SkiJumpingButton" Text="Ski Jumping"             Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="SkiingButton" Text="Skiing"                      Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="Formula1Button" Text="Formula l"                 Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="AustralianRulesButton" Text="Australian Rulesl"  Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="Volleyball2Button" Text="Volleyball"             Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="SnookerButton" Text="Snooker"                    Margin="5"/>
+            <Button BackgroundColor="#334756" x:Name="EsportsButton" Text="40"                         Margin="5"/>
             </StackLayout>
 
 

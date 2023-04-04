@@ -36,7 +36,7 @@ public partial class BetPage1X : ContentPage
 		await Navigation.PopModalAsync();
     }
 	public void labelworker() {
-		LabelFeed1X.Text = "LabelIsWorking";
+		LabelFeed1X.Text = "Choose Sport";
                  
     }            
 }

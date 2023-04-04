@@ -18,20 +18,23 @@ public partial class MainFeedPage1X : ContentPage
 
     public MainFeedPage1X(string buttonPressed)
 	{
-        k++;
       
 		InitializeComponent();
         somemain();
         async void somemain()
         {
-            if (k==0) { 
-            Program program = new Program();
+            if (k==0) {
+                k++;
+
+                Program program = new Program();
             await program.X1_Caller(buttonPressed);
             }
             else
             {
+                k++;
                 Navigation.PushModalAsync(new OddsPage1X());
             }
+
         }
 
         MainFeed1XLabel.Text = buttonPressed;

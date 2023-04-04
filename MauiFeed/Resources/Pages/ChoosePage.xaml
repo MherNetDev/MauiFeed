@@ -2,17 +2,35 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiFeed.Resources.Pages.ChoosePage"
+             xmlns:mct ="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BackgroundColor="#2C394B"
              Title="ChoosePage">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#2C394B" >
+            
+        </mct:StatusBarBehavior>
+        
+    </Page.Behaviors>
+    <!--<ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="#4D4D4D" StatusBarStyle="LightContent" />
+    </ContentPage.Behaviors>-->
+    
+
     <VerticalStackLayout>
         <Label 
             x:Name="ChooseLabel"
             Text="Choose Your Bet!!!"
             VerticalOptions="Center" 
+            BackgroundColor="#334756"
+            TextColor="#FF4C29"
             HorizontalOptions="Center" />
         <Button Text="1X"
                 x:Name="Button1X"
                 Clicked="Button1X_Clicked"
                 Margin="20"
+                BackgroundColor="#334756"
                 FontSize="50"></Button>
         
         
@@ -20,6 +38,7 @@
                 x:Name="ButtonFonBet"
                 Clicked="ButtonFonBet_Clicked"
                 Margin="20"
+                BackgroundColor="#334756"
                 FontSize="50"></Button>
         
         
@@ -27,6 +46,7 @@
                 Clicked="ButtonDafaBet_Clicked"
                 x:Name="ButtonDafaBet"
                 Margin="20"
+                BackgroundColor="#334756"
                 FontSize="50"></Button>
     </VerticalStackLayout>
 </ContentPage>

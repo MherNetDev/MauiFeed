@@ -5,6 +5,18 @@
              x:Class="MauiFeed.App">
     <Application.Resources>
         <ResourceDictionary>
+            
+            <Color x:Key="PrimaryColor">#FF0000</Color>
+            <!-- set the primary color of the app -->
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}" />
+                <!-- set the primary color of the navigation bar -->
+            </Style>
+            <Style TargetType="TabbedPage">
+                <Setter Property="BarBackgroundColor" Value="{StaticResource PrimaryColor}" />
+                <!-- set the primary color of the tab bar -->
+            </Style>
+            
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
